@@ -63,3 +63,68 @@ body {
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+/*nav*/
+#nav {
+  width: 100%;
+  background-color: #333333;
+  color: white;
+  height: 40px;
+  font-family: sans-serif, Helvetica, Arial;
+  font-size: 14px;
+  box-shadow: 0px 0px 2px grey;
+}
+#nav ul {
+  list-style: none;
+  text-decoration: none;
+  margin: 0px auto;
+  width: 1090px;
+}
+#nav > ul > li {
+  line-height: 40px;
+  float: left;
+  border-right: 1px solid gray;
+  transition: all 500ms;
+} 
+
+#nav > ul > li a {
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+#nav > ul > li > a:first-child {
+  border-left: 1px solid gray;
+}
+#nav > ul > li:hover {
+  background-color: #70b231;
+  box-shadow: 0px 0px 4px green inset;
+}
+
+/*Menu desplegable*/
+#nav > ul > li > ul {
+  display: none;
+  position: absolute;
+  color: white;
+  text-align: left;
+  width: 160px;
+  box-shadow: 0px 0px 2px gray;
+  z-index: 1;
+}
+#nav > ul > li:hover > ul {
+  display: block;
+}   
+#nav > ul > li:hover > ul > li {
+  background-color: #f2f1f0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px;
+  line-height: 25px;
+  transition: all 500ms;
+}
+#nav > ul > li:hover > ul > li:hover {
+  box-shadow: 0px 0px 2px gray inset;
+} 
+#nav > ul > li:hover > ul > li a {
+  color: #666666;
+}
